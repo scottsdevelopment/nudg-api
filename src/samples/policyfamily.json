@@ -1,0 +1,75 @@
+[
+    {
+      name: 'Access Control',
+      abbreviation: 'AC',
+      policies: [
+        {
+          name: 'Account Management',
+          status: true,
+          number: 'AC-01',
+          nist: '3.1.1, 3.1.2',
+          level: 1,
+          cmmc: 'AC.1.001, AC.1.002'
+        },
+        {
+          name: 'Access Management',
+          status: true,
+          number: 'AC-021',
+          nist: '3.1.1, 3.1.2',
+          level: 2,
+          cmmc: 'AC.1.001, AC.1.002'
+        },
+        {
+          name: 'Prohibit Non-Privileged Users from Executing Privileged Functions',
+          status: false,
+          number: 'AC-031',
+          nist: '3.1.1, 3.1.2',
+          level: 3,
+          cmmc: 'AC.1.001, AC.1.002'
+        },
+        {
+          name: 'Prohibit Non-Privileged Users from Executing Privileged Functions',
+          status: true,
+          number: 'AC-031',
+          nist: '3.1.1, 3.1.2, 3.1.3, 3.1.4, 3.1.5',
+          level: 3,
+          cmmc: 'AC.1.001, AC.1.002, AC.1.003, AC.1.004, AC.1.005'
+        },
+      ]
+    },
+    {
+      name: 'Asset Management',
+      abbreviation: 'AM',
+      policies: [
+      
+      ]
+    },
+    {
+      name: 'Audit and Accountability',
+      abbreviation: 'AU',
+      policies: [
+      
+      ]
+    },
+    {
+      name: 'Awareness and Training',
+      abbreviation: 'AT',
+      policies: [
+      
+      ]
+    },
+    {
+      name: 'Configuration Management',
+      abbreviation: 'CM',
+      policies: [
+      
+      ]
+    },
+    {
+      name: 'Cybersecurity Goverance',
+      abbreviation: 'CG',
+      policies: [
+      
+      ]
+    }
+  ];
