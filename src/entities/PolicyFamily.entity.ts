@@ -11,4 +11,6 @@ export class PolicyFamily {
 
     @OneToMany(type => Policy, policy => policy.policyFamily)
     policies: Policy[];
+
+    sort?: number;
 }

@@ -3,6 +3,8 @@ import { Policy } from './Policy.entity';
 import { PolicyProcedure } from './PolicyProcedure.entity';
 import { PolicyObjective } from './PolicyObjective.entity';
 import { ProcedureControl } from './ProcedureControl.entity';
+import { RevisionDeficiency } from './RevisionDeficiency.entity';
+import { RevisionProcess } from './RevisionProcess.entity';
 
 @Entity('Policy_revision_tbl')
 export class PolicyRevision {
@@ -26,6 +28,12 @@ export class PolicyRevision {
 
     @OneToOne(type => ProcedureControl, control => control.revision)
     procedureControl: ProcedureControl;
+
+    @OneToMany(type => RevisionDeficiency, deficiency => deficiency.revision)
+    deficiencies: RevisionDeficiency[];
+
+    @OneToMany(type => RevisionProcess, process => process.revision)
+    processes: RevisionProcess[];
 
     @ManyToOne(type => Policy, policy => policy.revisions)
     @JoinColumn({ name: "Policy_ID" })

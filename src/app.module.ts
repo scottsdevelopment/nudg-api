@@ -8,6 +8,8 @@ import { PolicyRevision } from './entities/PolicyRevision.entity';
 import { PolicyObjective } from './entities/PolicyObjective.entity';
 import { PolicyProcedure } from './entities/PolicyProcedure.entity';
 import { ProcedureControl } from './entities/ProcedureControl.entity';
+import { RevisionDeficiency } from './entities/RevisionDeficiency.entity';
+import { RevisionProcess } from './entities/RevisionProcess.entity';
 
 @Module({
   imports: [
@@ -24,7 +26,9 @@ import { ProcedureControl } from './entities/ProcedureControl.entity';
         PolicyRevision,
         PolicyObjective,
         PolicyProcedure,
-        ProcedureControl
+        ProcedureControl,
+        RevisionDeficiency,
+        RevisionProcess
       ],
       synchronize: false,
     }),
@@ -34,7 +38,9 @@ import { ProcedureControl } from './entities/ProcedureControl.entity';
       PolicyRevision,
       PolicyObjective,
       PolicyProcedure,
-      ProcedureControl
+      ProcedureControl,
+      RevisionDeficiency,
+      RevisionProcess
     ]),
   ],
   controllers: [AppController],

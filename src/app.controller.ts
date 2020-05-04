@@ -11,7 +11,7 @@ export class AppController {
   }
 
   @Get('policyFamily')
-  getPolicyFamilies(): string {
+  getPolicyFamilies(): any {
     return this.appService.getPolicyFamilies();
   }
 
