@@ -10,6 +10,7 @@ import { PolicyProcedure } from './entities/PolicyProcedure.entity';
 import { ProcedureControl } from './entities/ProcedureControl.entity';
 import { RevisionDeficiency } from './entities/RevisionDeficiency.entity';
 import { RevisionProcess } from './entities/RevisionProcess.entity';
+import { EventModule } from './events/event.module';
 
 @Module({
   imports: [
@@ -42,8 +43,10 @@ import { RevisionProcess } from './entities/RevisionProcess.entity';
       RevisionDeficiency,
       RevisionProcess
     ]),
+    EventModule,
   ],
   controllers: [AppController],
   providers: [AppService],
+
 })
 export class AppModule {}

@@ -27,6 +27,9 @@ export class RevisionDeficiency {
     @Column({ name: 'Total Milestones' })
     totalMilestones: number;
 
+    @Column({ name: 'Policy_Rev_ID' })
+    revisionId: number;
+
     @ManyToOne(type => PolicyRevision, revision => revision.id)
     @JoinColumn({ name: 'Policy_Rev_ID' })
     revision: PolicyRevision;
